@@ -20,7 +20,7 @@ function Body() {
   const [platform, setPlatform] = useState(null);
 
   const code = generateRandomCode();
-  const hostUrl = `http://192.168.1.6:3000?code=${code}`;
+  const hostUrl = `https://deeplink-implementation.vercel.app/?code=${code}`;
 
   function isAndroid() {
     return /android/i.test(navigator.userAgent);
